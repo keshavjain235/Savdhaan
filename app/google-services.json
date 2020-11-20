@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "179731452123",
+    "firebase_url": "https://hackforshe-rebootrebels.firebaseio.com",
+    "project_id": "hackforshe-rebootrebels",
+    "storage_bucket": "hackforshe-rebootrebels.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179731452123:android:74562176c5507b2cfabcfe",
+        "android_client_info": {
+          "package_name": "com.rebootrebels.savdhaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179731452123-r2tujhtlvv49pfncae1lge9vfa62ae8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmaoLhqQx3_zApLUbX9OqMGtK0ApbyxWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179731452123-r2tujhtlvv49pfncae1lge9vfa62ae8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
