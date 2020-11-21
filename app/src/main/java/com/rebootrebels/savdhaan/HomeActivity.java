@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
@@ -25,11 +26,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
@@ -47,17 +51,17 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     FirebaseFirestore fstore;
     TextView hdemail,hduname;
     String text,userID;
-
+    DatabaseReference reff;
 
     TextView pro,loca,contacts,send,msg,call,home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
+        DatabaseReference reff = FirebaseDatabase.getInstance().getReference().child("Members");
         Toolbar toolbar = findViewById(R.id.toolbar);
         panic=(ImageView)findViewById(R.id.panic);
-         send=(TextView)findViewById(R.id.Send);
+        send= (TextView) findViewById(R.id.Send);
         loca=(TextView)findViewById(R.id.location);
         fAuth=FirebaseAuth.getInstance();
         fstore=FirebaseFirestore.getInstance();
@@ -90,9 +94,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 mediaPlayer.start();
             }
         });
-
-
-                call.setOnClickListener(new View.OnClickListener() {
+        call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 makeCall();
@@ -216,9 +218,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
 
         }
-
-
-
+        
         super.onActivityResult(requestCode, resultCode, data);
     }
     public void makeCall()
@@ -233,8 +233,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
     public void sending()
     {
-       String p11="123456789";
-        String msgsm="Hello , I am from Savdhaan" +
+        String p11 = "123456789";
+        String msgsm = "Hello , I am from Savdhaan" +
                 " Your lovely one needs your help";
         ActivityCompat.requestPermissions(this,new String[] {Manifest.permission.SEND_SMS},PackageManager.PERMISSION_GRANTED);
         SmsManager sms=SmsManager.getDefault();

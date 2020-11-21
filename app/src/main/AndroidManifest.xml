@@ -28,7 +28,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.rebootrebels.savdhaan.Notification"></activity>
+        <activity android:name="com.rebootrebels.savdhaan.Notification" />
         <activity android:name="com.rebootrebels.savdhaan.Chat" />
         <activity android:name="com.rebootrebels.savdhaan.Help" />
         <activity

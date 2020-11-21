@@ -82,27 +82,27 @@
                         android:paddingBottom="5dp">
 
                         <LinearLayout
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
+                            android:weightSum="3"
                             android:layout_height="120dp"
                             android:layout_weight="1"
-
                             android:orientation="horizontal">
 
                             <LinearLayout
-                                android:layout_width="91dp"
+                                android:layout_width="0dp"
                                 android:layout_height="120dp"
-                                android:layout_marginLeft="10dp"
-
+                                android:layout_weight="1"
                                 android:background="@drawable/bg_green"
                                 android:orientation="vertical">
 
                                 <ImageView
-                                    android:layout_width="35dp"
+                                    android:layout_width="match_parent"
                                     android:layout_height="35dp"
-                                    android:layout_marginLeft="10dp"
+
                                     android:layout_marginTop="10dp"
-                                    android:paddingLeft="10dp"
+
                                     android:paddingTop="10dp"
+                                    android:layout_gravity="center"
                                     android:src="@drawable/ic_send_black_24dp" />
 
                                 <TextView
@@ -117,10 +117,10 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="102dp"
+                                android:layout_width="0dp"
                                 android:layout_height="120dp"
                                 android:layout_marginLeft="10dp"
-
+                                android:layout_weight="1"
                                 android:layout_marginRight="10dp"
                                 android:background="@drawable/bg_red"
                                 android:orientation="vertical">
@@ -128,11 +128,9 @@
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
                                     android:layout_marginTop="10dp"
-                                    android:paddingLeft="10dp"
                                     android:paddingTop="10dp"
-
+                                    android:layout_gravity="center"
                                     android:src="@drawable/ic_call_black_24dp" />
 
                                 <TextView
@@ -147,10 +145,11 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="match_parent"
+                                android:layout_width="0dp"
                                 android:layout_height="120dp"
                                 android:background="@drawable/bg_yellow"
                                 android:orientation="vertical"
+                                android:layout_weight="1"
                                 android:paddingLeft="10dp"
                                 android:paddingRight="10dp">
 
@@ -161,6 +160,7 @@
                                     android:paddingLeft="10dp"
                                     android:paddingTop="10dp"
                                     android:paddingRight="10dp"
+                                    android:layout_gravity="center"
                                     android:src="@drawable/ic_location_on_black_24dp" />
 
                                 <TextView
@@ -170,6 +170,7 @@
                                     android:layout_marginTop="30dp"
                                     android:text="Your \nLocation"
                                     android:textColor="#ffffff"
+                                    android:layout_gravity="center"
                                     android:textSize="15sp" />
                             </LinearLayout>
                         </LinearLayout>
@@ -187,27 +188,26 @@
                         android:paddingBottom="20dp">
 
                         <LinearLayout
-                            android:layout_width="0dp"
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:weightSum="3"
                             android:layout_weight="1"
-
                             android:orientation="horizontal">
 
                             <LinearLayout
-                                android:layout_width="91dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
                                 android:layout_height="120dp"
-                                android:layout_marginLeft="10dp"
-
                                 android:background="@drawable/bg_orange"
                                 android:orientation="vertical">
 
                                 <ImageView
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
-                                    android:layout_marginLeft="10dp"
-                                    android:layout_marginTop="10dp"
-                                    android:paddingLeft="10dp"
 
+                                    android:layout_marginTop="10dp"
+
+                                    android:layout_gravity="center"
                                     android:paddingTop="10dp"
                                     android:src="@drawable/ic_account_circle_black_24dp" />
 
@@ -223,10 +223,10 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="102dp"
+                                android:layout_width="0dp"
                                 android:layout_height="120dp"
                                 android:layout_marginLeft="10dp"
-
+                                android:layout_weight="1"
                                 android:layout_marginRight="10dp"
                                 android:background="@drawable/bg_blue"
                                 android:orientation="vertical">
@@ -234,9 +234,10 @@
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginLeft="10dp"
+
                                     android:layout_marginTop="10dp"
-                                    android:paddingLeft="10dp"
+
+                                    android:layout_gravity="center"
                                     android:paddingTop="10dp"
                                     android:src="@drawable/ic_contact_phone_black_24dp" />
 
@@ -252,10 +253,11 @@
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="match_parent"
+                                android:layout_width="0dp"
                                 android:layout_height="120dp"
                                 android:background="@drawable/bg_pink"
                                 android:orientation="vertical"
+                                android:layout_weight="1"
                                 android:paddingLeft="10dp"
                                 android:paddingRight="10dp">
 
@@ -266,6 +268,7 @@
                                     android:paddingLeft="10dp"
                                     android:paddingTop="10dp"
                                     android:paddingRight="10dp"
+                                    android:layout_gravity="center"
                                     android:src="@drawable/ic_help_outline_black_24dp" />
 
                                 <TextView
