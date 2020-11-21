@@ -8,11 +8,11 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:background="@drawable/bg">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/b"
-        android:layout_marginTop="150dp"/>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/b"
+    android:layout_marginTop="150dp"/>
     <TextView
         android:id="@+id/textView"
         android:textSize="@android:dimen/app_icon_size"

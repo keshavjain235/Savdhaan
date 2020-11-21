@@ -1,6 +1,7 @@
 package com.rebootrebels.savdhaan;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
@@ -28,6 +29,7 @@ public class Chat extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i=getPackageManager().getLaunchIntentForPackage("com.whatsapp");
                 startActivity(i);
+
             }
         });
         insta.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +38,8 @@ public class Chat extends AppCompatActivity {
 
                     Intent i = getPackageManager().getLaunchIntentForPackage("com.instagram.android");
                     startActivity(i);
+
+
             }
         });
         t.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +53,7 @@ public class Chat extends AppCompatActivity {
                 } catch (ActivityNotFoundException anfe) {
                     startActivity(new Intent(Intent.ACTION_VIEW,
                             Uri.parse(urlTw)));
+
                 }
             }
         });
@@ -57,6 +62,7 @@ public class Chat extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i=getPackageManager().getLaunchIntentForPackage("com.facebook.katana");
                 startActivity(i);
+
             }
         });
     }

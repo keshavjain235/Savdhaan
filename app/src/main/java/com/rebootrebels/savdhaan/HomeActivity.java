@@ -15,18 +15,15 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.speech.RecognizerIntent;
 import android.telephony.SmsManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -60,7 +57,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         panic=(ImageView)findViewById(R.id.panic);
-        send=(TextView)findViewById(R.id.Send);
+         send=(TextView)findViewById(R.id.Send);
         loca=(TextView)findViewById(R.id.location);
         fAuth=FirebaseAuth.getInstance();
         fstore=FirebaseFirestore.getInstance();
@@ -95,7 +92,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         });
 
 
-        call.setOnClickListener(new View.OnClickListener() {
+                call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 makeCall();
@@ -128,7 +125,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         contacts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this,Contacts.class));
+              startActivity(new Intent(HomeActivity.this,Contacts.class));
             }
         });
         pro.setOnClickListener(new View.OnClickListener() {
@@ -205,7 +202,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         if(requestCode==REQUEST_CODE_SPEECH_INPUT && resultCode==RESULT_OK)
         {
             ArrayList<String> matrix=data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
-            msg.setText(matrix.get(0).toString());
+           msg.setText(matrix.get(0).toString());
 
             if(msg.getText().toString()=="call" || msg.getText().toString()=="CALL")
             {
@@ -236,7 +233,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
     public void sending()
     {
-        String p11="123456789";
+       String p11="123456789";
         String msgsm="Hello , I am from Savdhaan" +
                 " Your lovely one needs your help";
         ActivityCompat.requestPermissions(this,new String[] {Manifest.permission.SEND_SMS},PackageManager.PERMISSION_GRANTED);
@@ -248,7 +245,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int id=menuItem.getItemId();
         if(id==R.id.nav_feedback) {
-            startActivity(new Intent(this, Feedback.class));
+            startActivity(new Intent(this, feedback.class));
         }
         if(id==R.id.nav_logout)
         {

@@ -5,12 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileActivity">
-
-    <RelativeLayout
+<RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/grad">
-
+        android:background="@drawable/grad"
+        >
         <RelativeLayout
             android:id="@+id/imgUser"
             android:layout_marginTop="20dp"
@@ -23,17 +22,19 @@
                 android:id="@+id/photo"
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                android:layout_marginBottom="30dp"
+               android:layout_marginBottom="30dp"
                 android:layout_marginTop="50dp"
                 android:adjustViewBounds="true"
                 android:background="@drawable/circle"
                 android:scaleType="centerInside"
                 android:src="@mipmap/ic_launcher" />
 
+
+
+
         </RelativeLayout>
 
     </RelativeLayout>
-
     <LinearLayout
         android:layout_marginTop="250dp"
         android:layout_width="match_parent"
@@ -80,7 +81,6 @@
             android:drawablePadding="15dp"
             android:hint="Your Email"
             android:paddingLeft="0dp"/>
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -91,16 +91,16 @@
 
         <TextView
             android:id="@+id/ph"
+            android:layout_marginLeft="5dp"
+            android:paddingStart="5sp"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="15sp"
             android:drawablePadding="15dp"
             android:hint="Your Phone no."
-            android:paddingStart="5sp"
-            android:paddingLeft="0dp"
-            android:textColor="#000000"
-            android:textSize="15sp" />
+            android:paddingLeft="0dp"/>
 
         <TextView
             android:id="@+id/veri"
@@ -109,6 +109,7 @@
             android:layout_gravity="center"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="0dp"
+
             android:text="EMAIL NOT VERIFIED !!."
             android:textColor="@color/headings"
             android:textSize="20sp"
@@ -123,6 +124,9 @@
             android:text="Verify Now"
             android:visibility="gone" />
 
+
+
     </LinearLayout>
+
 </RelativeLayout>
 
