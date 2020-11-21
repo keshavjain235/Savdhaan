@@ -233,12 +233,15 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
     public void sending()
     {
-        String p11 = "123456789";
-        String msgsm = "Hello , I am from Savdhaan" +
-                " Your lovely one needs your help";
+        String p1 = Contacts.getnum1();
+        String p2 = Contacts.getnum2();
+        String p3 = Contacts.getnum3();
+        String msgsm = "Hello , I am from Savdhaan \n Your lovely one needs your help";
         ActivityCompat.requestPermissions(this,new String[] {Manifest.permission.SEND_SMS},PackageManager.PERMISSION_GRANTED);
         SmsManager sms=SmsManager.getDefault();
-        sms.sendTextMessage(p11,null,msgsm,null,null);
+        sms.sendTextMessage(p1,null,msgsm,null,null);
+        sms.sendTextMessage(p2,null,msgsm,null,null);
+        sms.sendTextMessage(p3,null,msgsm,null,null);
     }
 
     @Override

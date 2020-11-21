@@ -48,8 +48,14 @@ public class Contacts extends AppCompatActivity {
        });
 
     }
-    public static String getMyString(){
+    public static String getnum1(){
         return p1;
+    }
+    public static String getnum2(){
+        return p2;
+    }
+    public static String getnum3(){
+        return p3;
     }
 }
 
