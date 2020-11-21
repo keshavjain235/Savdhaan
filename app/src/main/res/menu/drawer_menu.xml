@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@drawable/ic_call_black_24dp"
+            android:title="Call"
+            />
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat_black_24dp"
+            android:title="Chat" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Profile" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share">
+
+            </item>
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_send_black_24dp"
+                android:title="Feedback ">
+
+            </item>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="Logout">
+
+            </item>
+        </menu>
+    </item>
+</menu>
